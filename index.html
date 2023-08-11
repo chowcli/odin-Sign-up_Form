@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="side-hero">
+        <div class="logo">
+          <img src="images/odin-lined.png" alt="The Odin Project Logo" />
+          <span>ODIN</span>
+        </div>
+        <p>
+          Photo by <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on
+          <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a>
+        </p>
+      </div>
+
+      <div class="form-section">
+        <div class="header">
+          <p>
+            This is not a real online service! You know you need something like this in your life to help you realize
+            your deepest dreams.
+          </p>
+          <p>Sign up <em>now</em> to get started.</p>
+          <p>You <em>know</em> you want to</p>
+        </div>
+
+        <div class="input-section">
+          <p>Let's do this</p>
+
+          <form>
+            <div class="input">
+              <label for="firstName">FIRST NAME</label>
+              <input type="text" id="firstName" name="user_fName" required />
+              <div class="error-show"></div>
+            </div>
+
+            <div class="input">
+              <label for="lastName">LAST NAME</label>
+              <input type="text" id="lastName" name="user_lName" required />
+              <div class="error-show"></div>
+            </div>
+
+            <div class="input">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="user_email" required />
+              <div class="error-show"></div>
+            </div>
+
+            <div class="input">
+              <label for="phoneNum">PHONE NUMBER</label>
+              <input
+                type="tel"
+                id="phoneNum"
+                name="user_pNum"
+                required
+                pattern="[0-9]{10}|[0-9]{3}[- ][0-9]{3}[- ][0-9]{4}" />
+              <div class="error-show"></div>
+            </div>
+
+            <div class="input">
+              <label for="pwd">PASSWORD</label>
+              <input type="number" id="pwd" name="user_pwd" required minlength="6" />
+              <div class="error-show"></div>
+            </div>
+
+            <div class="input">
+              <label for="confirm-pwd">CONFIRM PASSWORD</label>
+              <input type="number" id="confirm-pwd" name="check_pwd" required minlength="6" />
+              <div class="error-show"></div>
+            </div>
+          </form>
+
+          <div class="submit-section">
+            <button>Create Account</button>
+
+            <p>Already have an account? <a href="">Log in</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
