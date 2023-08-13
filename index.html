@@ -15,7 +15,8 @@
           <span>ODIN</span>
         </div>
         <p>
-          Photo by <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on
+          Photo by
+          <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on
           <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a>
         </p>
       </div>
@@ -23,17 +24,17 @@
       <div class="form-section">
         <div class="header">
           <p>
-            This is not a real online service! You know you need something like this in your life to help you realize
-            your deepest dreams.
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
           </p>
           <p>Sign up <em>now</em> to get started.</p>
-          <p>You <em>know</em> you want to</p>
+          <p>You <em>know</em> you want to.</p>
         </div>
 
         <div class="input-section">
-          <p>Let's do this</p>
+          <p>Let's do this!</p>
 
-          <form>
+          <form id="my-form">
             <div class="input">
               <label for="firstName">FIRST NAME</label>
               <input type="text" id="firstName" name="user_fName" required />
@@ -65,22 +66,31 @@
 
             <div class="input">
               <label for="pwd">PASSWORD</label>
-              <input type="number" id="pwd" name="user_pwd" required minlength="6" />
+              <input
+                type="text"
+                id="pwd"
+                name="user_pwd"
+                required
+                minlength="6" />
               <div class="error-show"></div>
             </div>
 
             <div class="input">
               <label for="confirm-pwd">CONFIRM PASSWORD</label>
-              <input type="number" id="confirm-pwd" name="check_pwd" required minlength="6" />
+              <input
+                type="text"
+                id="confirm-pwd"
+                name="check_pwd"
+                required
+                minlength="6" />
               <div class="error-show"></div>
             </div>
           </form>
+        </div>
 
-          <div class="submit-section">
-            <button>Create Account</button>
-
-            <p>Already have an account? <a href="">Log in</a></p>
-          </div>
+        <div class="submit-section">
+          <button type="submit" form="my-form">Create Account</button>
+          <p>Already have an account? <a href="">Log in</a></p>
         </div>
       </div>
     </div>
